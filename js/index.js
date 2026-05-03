@@ -32,7 +32,7 @@ async function FetchWeather(cityName){
                             let weatherIcon = weatherData.weather[0].icon;
                             let cityName = weatherData.name;
 
-                            //wind conditions
+                            
                             let windSpeed = (weatherData.wind.speed * 3.6).toFixed(2);
                             let gust = (weatherData.wind.gust * 3.6).toFixed(2);
                             let pressure = weatherData.main.pressure;
