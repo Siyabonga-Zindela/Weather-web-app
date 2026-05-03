@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather app</title>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+  <body>
+    <div class="grid-wrapper">
+      <div class="search-bar">
+        <form action="" method="get" id="form">
+          <input
+            type="text"
+            id="search-query"
+            class="search-input"
+            placeholder="Enter city"
+          />
+        </form>
+      </div>
+
+      <div class="left-bar">
+        <div class="left-bar-wrapper">
+          <div class="logo-div">
+            <img src="assets/icons8-weather-48.png" alt="Weather icon" />
+            <p>Weather app</p>
+          </div>
+          <div class="version-app">
+            <p>Version: v1</p>
+          </div>
+        </div>
+      </div>
+      <div class="main-weather-section">
+        <div class="left-main">
+          <div class="main-items">
+            <p class="city-name" id="city-name"></p>
+            <p class="chance-of-rain" id="description"></p>
+          </div>
+          <div class="main-items">
+            <p class="temperature">
+              <span id="maxTemp"></span>/<span id="minTemp"></span>
+            </p>
+          </div>
+        </div>
+        <div class="right-main">
+          <img
+            src="https://clipart-library.com/images/kiKnBM44T.png"
+            alt="Weather image"
+            id="weatherIcon"
+          />
+        </div>
+      </div>
+
+      <div class="air-condition-section">
+        <div class="air-condition-header">
+          <h5>AIR CONDITIONS</h5>
+        </div>
+        <div class="air-conditions-wrapper">
+          <div class="wind-section-card">
+            <div class="wind-section-header">
+              <img src="assets/icons-windspeed.png" alt="" />
+              <h6>Wind speed</h6>
+            </div>
+            <p class="air-condition-text" id="windSpeed"></p>
+          </div>
+          <div class="wind-section-card">
+            <div class="wind-section-header">
+              <img src="assets/icons-pressure.png" alt="" />
+              <h6>Pressure</h6>
+            </div>
+            <p class="air-condition-text" id="pressure"></p>
+          </div>
+          <div class="wind-section-card">
+            <div class="wind-section-header">
+              <img src="assets/icons-wind.png" alt="" />
+              <h6>Gust</h6>
+            </div>
+            <p class="air-condition-text" id="gust"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script defer src="js/index.js"></script>
+</html>

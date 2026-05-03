@@ -1,0 +1,160 @@
+body {
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 20%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("../assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr auto;
+  grid-template-areas:
+    "left-bar search-bar search-bar"
+    "left-bar main-weather-section main-weather-section"
+    "left-bar air-condition-section air-condition-section"
+    "left-bar air-condition-section air-condition-section";
+  height: 94vh;
+  gap: 1rem;
+}
+.search-bar {
+  grid-area: search-bar;
+  background-color: rgb(32, 43, 59);
+  height: 70px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+form{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-right: 20px;
+}
+
+.btn-wrapper{
+    position:relative;
+    right: 0px;
+}
+.left-bar {
+  grid-area: left-bar;
+  background-color: rgb(32, 43, 59);
+  border-radius: 20px;
+}
+.logo-div{
+  width: 100%;
+  padding-top: 10px;
+  color: orange;
+}
+.left-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 40rem;
+  text-align: center;
+}
+.version-app {
+  width: 100%;
+  color: grey;
+}
+
+.main-weather-section {
+  grid-area: main-weather-section;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-items: center;
+}
+.main-weather-section img {
+  height: auto;
+  width: 200px;
+  margin: 0%;
+  margin-right: 5%;
+}
+.left-main {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-left: 5%;
+}
+.city-name {
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+.chance-of-rain {
+  font-size: 1rem;
+  color: rgb(173, 170, 170);
+}
+.temperature {
+  font-size: 3.5rem;
+  color: whitesmoke;
+}
+#minTemp{
+    color: rgb(173, 170, 170);
+    font-size: 2rem;
+}
+h5 {
+  color: rgba(128, 128, 128, 0.74);
+  margin-left: 5%;
+}
+h6 {
+  color: rgba(128, 128, 128, 0.74);
+  margin-left: 5%;
+  font-size: 0.7rem;
+}
+
+
+
+.air-condition-section {
+  grid-area: air-condition-section;
+  background-color: rgb(32, 43, 59);
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.search-input {
+  background-color: rgb(32, 43, 59);
+  font-size: 1rem;
+  border-style: none;
+  margin-left: 5%;
+  outline: none;
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.856);
+  width: 80%;
+}
+
+
+.air-conditions-wrapper{
+    display: flex;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+.wind-section-card{
+    background-color: rgba(68, 80, 99, 0.575);
+    width: 100%;
+    border-radius: 20px;
+}
+.wind-section-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5px;
+}
+.wind-section-header img{
+    height: 30px;
+    width: 30px;
+    padding-right: 5px;
+}
+.air-condition-text{
+  font-size: 2.2rem;
+  color: whitesmoke;
+  text-align: right;
+  padding-right: 5px;
+}
