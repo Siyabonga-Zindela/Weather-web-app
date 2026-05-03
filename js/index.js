@@ -4,9 +4,14 @@ let cityName = document.getElementById("search-query");
 const countryCode = "ZA";
 
 async function FetchWeather(cityName){
+    let loading = document.getElementById("loading");
+    loading.style.display = "block";
+    loading.textContent = "Loading...";
    try { 
-        await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName},${countryCode}&limit=1&appid=${apiKey}`)
+        await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName},${countryCode}&limit=1&appid=${apiKey}`)
             .then((response =>{
+                    
+                
                 return response.json()
             }))
             .then((coordinatesData =>{
@@ -18,6 +23,7 @@ async function FetchWeather(cityName){
                             return response.json();
                         }))
                         .then((weatherData => {
+                            loading.style.display = "none";
                             let feelsLike = (weatherData.main.feels_like - 273.15).toFixed(0);
 
                             let maxTemp = (weatherData.main.temp_max - 273.15).toFixed(0);

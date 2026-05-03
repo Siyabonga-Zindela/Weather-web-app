@@ -29,6 +29,9 @@ body {
   align-items: center;
   width: 100%;
 }
+.loading{
+    color: rgb(230, 229, 229);
+}
 form{
     display: flex;
     justify-content: space-between;
@@ -74,6 +77,7 @@ form{
   width: 200px;
   margin: 0%;
   margin-right: 5%;
+  display: none;
 }
 .left-main {
   display: flex;
