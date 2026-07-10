@@ -1,4 +1,6 @@
-
+let avgData = getSelection("C:Users/Siyabonga/Desktop/Web development/lumina/address.txt");
+const apiKeys = "ar3RdS1w19hdShBx";
+console.log(avgData);
 const apiKey = "7a107e0b667e8bcefecdab5f0efeb9c9";
 let cityName = document.getElementById("search-query");
 const countryCode = "ZA";
